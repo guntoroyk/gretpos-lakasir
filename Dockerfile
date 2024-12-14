@@ -46,17 +46,6 @@ RUN chmod 775 storage/logs \
   /var/www/storage/framework/sessions \
   /var/www/storage/framework/views
 
-RUN composer install --ignore-platform-reqs
-
-# Generate key
-RUN php artisan key:generate
-
-# Run migrations
-RUN php artisan migrate
-
-# Create a symbolic link
-RUN php artisan storage:link
-
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
 CMD ["php-fpm"]
