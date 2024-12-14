@@ -12,7 +12,8 @@ RUN apt-get update && apt-get install -y \
   libjpeg-dev \
   libfreetype6-dev \
   zip \
-  unzip
+  unzip \ 
+  oniguruma-dev
 
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
