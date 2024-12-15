@@ -8,8 +8,6 @@ yarn-error.log
 *.log
 storage/*.key
 
-
-/node_modules
 /public/hot
 /public/storage
 /public/tmp
