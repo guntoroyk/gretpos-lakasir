@@ -25,7 +25,8 @@ class RetailSeeder extends Seeder
 
             return;
         }
-        $contactEmail = 'guntoro.gyk@gmail.com';
-        $this->command->warn("Contact the GRetPOS owner to get this retail product: mailto://$contactEmail");
+        $contactEmail = 'lakasirapp@gmail.com';
+        $this->command->warn("Contact the Lakasir owner to get this retail product: mailto://$contactEmail");
+
     }
 }
